@@ -3,6 +3,7 @@
 //  Swift-Introduction_2
 //
 //  Created by Jkutkut on 26/10/22.
+//  Revised by kiol12
 //
 
 import Foundation
@@ -39,7 +40,11 @@ func ej3() {
     for _ in 0..<AMOUNT {
         aTonOfFives.append(VALUE)
     }
+    
+    // Also works:
+    let aTonOfFives2 : [Int] = Array(repeating: VALUE, count: AMOUNT)
     print("Elements:", aTonOfFives.count)
+    print("Elements:", aTonOfFives2.count)
 }
 
 func ej4() {
